@@ -10,7 +10,6 @@ import { CartContext } from './contexts/CartContext';
 import Navigation from './components/Navigation';
 import Products from './components/Products';
 import ShoppingCart from './components/ShoppingCart';
-import Product from './components/Product';
 
 function App() {
 	const [products] = useState(data);
