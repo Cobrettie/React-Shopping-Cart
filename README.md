@@ -59,13 +59,13 @@ Before you get started, please take a few minutes and get acquainted with this a
 
 **STEP 3 - Providing data with ProductContext**
 
-- Now that we've created our `ProductContext` we can import into our `App.js`. Now we can start providing data across our application!
+- [x] Now that we've created our `ProductContext` we can import into our `App.js`. Now we can start providing data across our application!
 
-- Wrap all of your components/routes in `App.js` inside of `ProductContext.Provider` component.
+- [x] Wrap all of your components/routes in `App.js` inside of `ProductContext.Provider` component.
 
-- Next pass a value prop to your `Provider`.
+- [x] Next pass a value prop to your `Provider`.
 
-- In the value prop we'll pass in the products state, and an addItem function that will allow us to add books to the cart.
+- [x] In the value prop we'll pass in the products state, and an addItem function that will allow us to add books to the cart.
 
 ```js
 <ProductContext.Provider value={{ products, addItem }}>
@@ -121,7 +121,7 @@ const { products, addItem } = useContext(ProductContext);
 
 - Inside of our new `CartContext` import `createContext` and create a new context named `CartContext`.
 
-**STEP 5 - Providing data with CartContext**
+**STEP 6 - Providing data with CartContext**
 
 - Let's go ahead and bring our newly created `CartContext` into our `App.js` and wrap all of our components inside of our `CartContext.Provider`. Make sure our `ProductContext.Provider` is still the root provider.
 
