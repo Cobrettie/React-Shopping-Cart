@@ -127,7 +127,7 @@ const { products, addItem } = useContext(ProductContext);
 
 - [x] Now pass a value prop to our `CartContext.Provider`, this value prop is going to contain our `cart` state.
 
-- Now that we're providing our cart data, we can start to refactor our `Navigation` and `ShoppingCart` components.
+- [x] Now that we're providing our cart data, we can start to refactor our `Navigation` and `ShoppingCart` components.
 
 - Let's start with our `ShoppingCart` component first. Go ahead and refactor the `ShoppingCart` route to no longer use render props. This will throw us an error, but we'll be able to resolve it quickly.
 
