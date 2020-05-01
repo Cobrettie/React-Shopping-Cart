@@ -129,7 +129,7 @@ const { products, addItem } = useContext(ProductContext);
 
 - [x] Now that we're providing our cart data, we can start to refactor our `Navigation` and `ShoppingCart` components.
 
-- Let's start with our `ShoppingCart` component first. Go ahead and refactor the `ShoppingCart` route to no longer use render props. This will throw us an error, but we'll be able to resolve it quickly.
+- [x] Let's start with our `ShoppingCart` component first. Go ahead and refactor the `ShoppingCart` route to no longer use render props. This will throw us an error, but we'll be able to resolve it quickly.
 
 - While were at it let's go ahead and remove the props from our navigation as well.
 
@@ -137,20 +137,20 @@ const { products, addItem } = useContext(ProductContext);
 
 - Our cart data is now being provided to us from our `CartContext` time to consume it!
 
-- First, let's head to our `ShoppingCart` component and import the `useContext` hook and our `CartContext`.
+- [x] First, let's head to our `ShoppingCart` component and import the `useContext` hook and our `CartContext`.
 
-- Now in the component, pass `CartContext` to the `useContext` hook and assign it to a variable named cart.
+- [x] Now in the component, pass `CartContext` to the `useContext` hook and assign it to a variable named cart.
 
-- Inside of our component we now need to remove all instances of props.
+- [x] Inside of our component we now need to remove all instances of props.
 
   - Remove the `props` parameter
   - Remove the `props` portion in our `getCartTotal` function
   - Remove `props` when we're mapping over our cart
 
 - Time to do the same thing for our `Navigation` component.
-  - First import the `useContext` hook and our `CartContext`
-  - Next, pass our `CartContext` to the `useContext` hook and assign it to a variable named cart.
-  - Lastly we need to remove all instances of `props`
+  - [x] First import the `useContext` hook and our `CartContext`
+  - [x] Next, pass our `CartContext` to the `useContext` hook and assign it to a variable named cart.
+  - [x] Lastly we need to remove all instances of `props`
     - Remove `props` from our parameters
     - Remove `props` from our cart length
 
